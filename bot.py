@@ -20,7 +20,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Зачекайте, йде перевірка...")
 
     # Надсилаємо повідомлення адмінам
-    message_to_admin = f"Нове замовлення!
+    message_to_admin = f"Нове замовлення!\n\nВід @{username} (ID: {user_id})\nПовідомлення: {user_message}"
 
 Від @{username} (ID: {user_id})
 Повідомлення: {user_message}"
