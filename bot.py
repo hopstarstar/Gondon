@@ -23,7 +23,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message_to_admin = f"Нове замовлення!\n\nВід @{username} (ID: {user_id})\nПовідомлення: {user_message}"
 
 Від @{username} (ID: {user_id})
-Повідомлення: {user_message}"
+message_to_admin = f"Нове замовлення!\n\nВід @{username} (ID: {user_id})\nПовідомлення: {user_message}"
     await context.bot.send_message(chat_id=ADMIN_ID, text=message_to_admin)
 
 # Коли адмін відповідає користувачу
